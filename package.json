@@ -1,0 +1,26 @@
+{
+  "name": "dynamodb-update-expression-composer",
+  "packageManager": "yarn@3.1.0",
+  "type": "module",
+  "main": "./lib/index.js",
+  "module": "./lib/index.mjs",
+  "version": "0.0.0",
+  "types": "./types/src/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build && tsc -d -p ./tsconfig.declation.json",
+    "test-ci": "vitest run --coverage.enabled --coverage.reporter='text-summary'",
+    "test": "vitest"
+  },
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.30.1",
+    "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
+    "typescript": "^5.0.4",
+    "vite": "^4.2.1",
+    "vitest": "^0.30.1"
+  }
+}
